@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="Reservas.js"></script>
+    <!-- <script src="./modelo/Sala.js"></script> -->
+    <link rel="stylesheet" href="Reservas.css">
+    <title>Gerência de Reserva</title>
+</head>
+
+<body>
+ 
+    <header>Gerências de Reserva</header>
+    <div>
+        <h2>Nova Reserva</h2>
+    </div>
+    <div>
+        <label for="novasessao">Sessão</label>
+        <select name="novasessao" id="sessoes" onclick="novaReserva.pegarSessoes()">Sessão
+        </select>
+    </div>
+    <div>
+        <label for="novocliente">Cliente</label>
+        <select name="novocliente" id="cliente" onclick="novaReserva. pegarClientes()">Cliente
+          
+        </select>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Escolha a Cadeira</legend>
+            <table id="A">
+                <tbody id="resultadoA">
+
+                    <div id="cadeira">
+                        <h3>A</h3>
+                
+                            <button class="botaocadeira" id="cadeiraA0" onclick="novaReserva.clicarNoBotão('cadeiraA0')">1</button>
+                            <button class="botaocadeira" id="cadeiraA1" onclick="novaReserva.clicarNoBotão('cadeiraA1')">2</button>
+                            <button class="botaocadeira" id="cadeiraA2" onclick="novaReserva.clicarNoBotão('cadeiraA2')">3</button>
+                            <button class="botaocadeira" id="cadeiraA3" onclick="novaReserva.clicarNoBotão('cadeiraA3')">4</button>
+                            <button class="botaocadeira" id="cadeiraA4" onclick="novaReserva.clicarNoBotão('cadeiraA4')">5</button>
+                            <button class="botaocadeira" id="cadeiraA5" onclick="novaReserva.clicarNoBotão('cadeiraA5')">6</button>
+                            <button class="botaocadeira" id="cadeiraA6" onclick="novaReserva.clicarNoBotão('cadeiraA6')">7</button>
+                            <button class="botaocadeira" id="cadeiraA7" onclick="novaReserva.clicarNoBotão('cadeiraA7')">8</button>
+                            <button class="botaocadeira" id="cadeiraA8" onclick="novaReserva.clicarNoBotão('cadeiraA8')">9</button>
+                            <button class="botaocadeira" id="cadeiraA9" onclick="novaReserva.clicarNoBotão('cadeiraA9')">10</button>
+                   
+                        
+                    </div>
+                </tbody>
+            </table>
+            <table id="B">
+                <tbody id="resultadoB">
+                    <h3>B</h3>
+                    <div id="cadeira2">
+                        <button class="botaocadeira" id="cadeiraB0" onclick="novaReserva.clicarNoBotão('cadeiraB0')">1</button>
+                        <button class="botaocadeira" id="cadeiraB1" onclick="novaReserva.clicarNoBotão('cadeiraB1')">2</button>
+                        <button class="botaocadeira" id="cadeiraB2" onclick="novaReserva.clicarNoBotão('cadeiraB2')">3</button>
+                        <button class="botaocadeira" id="cadeiraB3" onclick="novaReserva.clicarNoBotão('cadeiraB3')">4</button>
+                        <button class="botaocadeira" id="cadeiraB4" onclick="novaReserva.clicarNoBotão('cadeiraB4')">5</button>
+                        <button class="botaocadeira" id="cadeiraB5" onclick="novaReserva.clicarNoBotão('cadeiraB5')">6</button>
+                        <button class="botaocadeira" id="cadeiraB6" onclick="novaReserva.clicarNoBotão('cadeiraB6')">7</button>
+                        <button class="botaocadeira" id="cadeiraB7" onclick="novaReserva.clicarNoBotão('cadeiraB7')">8</button>
+                        <button class="botaocadeira" id="cadeiraB8" onclick="novaReserva.clicarNoBotão('cadeiraB8')">9</button>
+                        <button class="botaocadeira" id="cadeiraB9" onclick="novaReserva.clicarNoBotão('cadeiraB9')">10</button>
+                    </div>
+                </tbody>
+
+            </table>
+            <table id="C">
+                <tbody id="resultadoC">
+                    <h3>C</h3>
+                    <div id="cadeira3">
+                        <button class="botaocadeira" id="cadeiraC0" onclick="novaReserva.clicarNoBotão('cadeiraC0')">1</button>
+                        <button class="botaocadeira" id="cadeiraC1" onclick="novaReserva.clicarNoBotão('cadeiraC1')">2</button>
+                        <button class="botaocadeira" id="cadeiraC2" onclick="novaReserva.clicarNoBotão('cadeiraC2')">3</button>
+                        <button class="botaocadeira" id="cadeiraC3" onclick="novaReserva.clicarNoBotão('cadeiraC3')">4</button>
+                        <button class="botaocadeira" id="cadeiraC4" onclick="novaReserva.clicarNoBotão('cadeiraC4')">5</button>
+                        <button class="botaocadeira" id="cadeiraC5" onclick="novaReserva.clicarNoBotão('cadeiraC5')">6</button>
+                        <button class="botaocadeira" id="cadeiraC6" onclick="novaReserva.clicarNoBotão('cadeiraC6')">7</button>
+                        <button class="botaocadeira" id="cadeiraC7" onclick="novaReserva.clicarNoBotão('cadeiraC7')">8</button>
+                        <button class="botaocadeira" id="cadeiraC8" onclick="novaReserva.clicarNoBotão('cadeiraC8')">9</button>
+                        <button class="botaocadeira" id="cadeiraC9" onclick="novaReserva.clicarNoBotão('cadeiraC9')">10</button>
+                    </div>
+                </tbody>
+            </table>
+            <table id="D">
+                <tbody id="resultadoD">
+                    <h3>D</h3>
+                    <div id="cadeira4">
+                        <button class="botaocadeira" id="cadeiraD0" onclick="novaReserva.clicarNoBotão('cadeiraD0')">1</button>
+                        <button class="botaocadeira" id="cadeiraD1" onclick="novaReserva.clicarNoBotão('cadeiraD1')">2</button>
+                        <button class="botaocadeira" id="cadeiraD2" onclick="novaReserva.clicarNoBotão('cadeiraD2')">3</button>
+                        <button class="botaocadeira" id="cadeiraD3" onclick="novaReserva.clicarNoBotão('cadeiraD3')">4</button>
+                        <button class="botaocadeira" id="cadeiraD4" onclick="novaReserva.clicarNoBotão('cadeiraD4')">5</button>
+                        <button class="botaocadeira" id="cadeiraD5" onclick="novaReserva.clicarNoBotão('cadeiraD5')">6</button>
+                        <button class="botaocadeira" id="cadeiraD6" onclick="novaReserva.clicarNoBotão('cadeiraD6')">7</button>
+                        <button class="botaocadeira" id="cadeiraD7" onclick="novaReserva.clicarNoBotão('cadeiraD7')">8</button>
+                        <button class="botaocadeira" id="cadeiraD8" onclick="novaReserva.clicarNoBotão('cadeiraD8')">9</button>
+                        <button class="botaocadeira" id="cadeiraD9" onclick="novaReserva.clicarNoBotão('cadeiraD9')">10</button>
+                    </div>
+                </tbody>
+            </table>
+            </table>
+            <table id="E">
+                <tbody id="resultadoE">
+                    <h3>E</h3>
+                    <div id="cadeira5">
+
+                        <button class="botaocadeira" id="cadeiraE0" onclick="novaReserva.clicarNoBotão('cadeiraE0')">1</button>
+                        <button class="botaocadeira" id="cadeiraE1" onclick="novaReserva.clicarNoBotão('cadeiraE1')">2</button>
+                        <button class="botaocadeira" id="cadeiraE2" onclick="novaReserva.clicarNoBotão('cadeiraE2')">3</button>
+                        <button class="botaocadeira" id="cadeiraE3" onclick="novaReserva.clicarNoBotão('cadeiraE3')">4</button>
+                        <button class="botaocadeira" id="cadeiraE4" onclick="novaReserva.clicarNoBotão('cadeiraE4')">5</button>
+                        <button class="botaocadeira" id="cadeiraE5" onclick="novaReserva.clicarNoBotão('cadeiraE5')">6</button>
+                        <button class="botaocadeira" id="cadeiraE6" onclick="novaReserva.clicarNoBotão('cadeirae6')">7</button>
+                        <button class="botaocadeira" id="cadeiraE7" onclick="novaReserva.clicarNoBotão('cadeiraE7')">8</button>
+                        <button class="botaocadeira" id="cadeiraE8" onclick="novaReserva.clicarNoBotão('cadeiraE8')">9</button>
+                        <button class="botaocadeira" id="cadeiraE9" onclick="novaReserva.clicarNoBotão('cadeiraE9')">10</button>
+                    </div>
+                </tbody>
+
+                <table id="F">
+                    <tbody id="resultadoF">
+                        <h3>F</h3>
+                        <div id="cadeira6">
+                            <button class="botaocadeira" id="cadeiraF0" onclick="novaReserva.clicarNoBotão('cadeiraF0')">1</button>
+                            <button class="botaocadeira" id="cadeiraF1" onclick="novaReserva.clicarNoBotão('cadeiraF1')">2</button>
+                            <button class="botaocadeira" id="cadeiraF2" onclick="novaReserva.clicarNoBotão('cadeiraF2')">3</button>
+                            <button class="botaocadeira" id="cadeiraF3" onclick="novaReserva.clicarNoBotão('cadeiraF3')">4</button>
+                            <button class="botaocadeira" id="cadeiraF4" onclick="novaReserva.clicarNoBotão('cadeiraF4')">5</button>
+                            <button class="botaocadeira" id="cadeiraF5" onclick="novaReserva.clicarNoBotão('cadeiraF5')">6</button>
+                            <button class="botaocadeira" id="cadeiraF6" onclick="novaReserva.clicarNoBotão('cadeiraF6')">7</button>
+                            <button class="botaocadeira" id="cadeiraF7" onclick="novaReserva.clicarNoBotão('cadeiraF7')">8</button>
+                            <button class="botaocadeira" id="cadeiraF8" onclick="novaReserva.clicarNoBotão('cadeiraF8')">9</button>
+                            <button class="botaocadeira" id="cadeiraF9" onclick="novaReserva.clicarNoBotão('cadeiraF9')">10</button>
+                        </div>
+                    </tbody>
+
+                </table>
+
+            </table>
+        </fieldset>
+    </div>
+
+    <div id="botaoAcoes">
+        <button onclick="novaReserva.Reservas()">Salvar</button>
+        <button>Cancelar</button>
+    </div>
+    <table id="ResultadoFinal">
+        <thead>Reservas Cadastradas
+            <th>Filme</th>
+            <th>Data</th>
+            <th>Inicio</th>
+            <th>Legendado</th>
+            <th>3D/2D</th>
+        </thead>
+    </table>
+
+</body>
+
+</html>

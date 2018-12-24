@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/Sessao.js"></script>
+    <link rel="stylesheet" href="css/Sessões.css">
+    <title>Gerencia de Sessões</title>
+</head>
+<body>
+    <header>Gerencia de Sessões</header>
+    <div>
+        <h2>Nova Sessão</h2>
+    </div>
+    <div>
+        <Label>Filme da Sessão</Label>
+        <input type="search" id="filmeSessao">
+    </div>
+    <div>
+        <label for="salasessao">Sala da Sessão</label>
+        <input type="search" id="salaSessao">
+    </div>
+    <div>
+        <label for="dubladolegendado">Dublado/Legendado</label>
+        <select name="selectdubladolegendado">
+            <option value="Dublado" id="dubladolegendado">Dublado</option>
+            <option value="Legendado" id="dubladolegendado" selected>Legendado</option>
+        </select>
+    </div>
+    <div>
+        <label for="tresD">3D/2D</label>
+        <select name="selecttresD">
+            <option value="3D" id="tresD">3D</option>
+            <option value="2D" id="tresD" selected>2D</option>
+        </select>
+    </div>
+    <div>
+        <label for="datasessao">Data sessão</label>
+        <input type="date" id="datasessao">
+    </div>
+    <div>
+        <label for="horario">Horario de inicio</label>
+        <input type="datetime" id="horario">
+    </div>
+    <div id="botaoacoes">
+        <button onclick="novoSessao.salvar()">Salvar</button>
+        <button onclick="novoSessao.limpar()">Cancelar</button>
+    </div>
+    <table>
+        <thead id="titulo">
+            <th>Filme</th>
+            <th>Sala</th>
+            <th>Dublado/Legendado</th>
+            <th>3D/2D</th>
+            <th>Data sessão</th>
+            <th>Horario de inicio</th>
+
+            <th></th>
+            <th></th>
+
+
+        </thead>
+        <tbody id="tabela">
+
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<script src="js/Filme.js"></script>
+<link rel="stylesheet" href="css/Filmes.css">
+    <title>Gerência de Filmes</title>
+</head>
+
+<body>
+    <header>Gerência de Filmes</header>
+    <div>
+        <h2>Novo Filme</h2>
+    </div>
+    <div>
+        <label for="nomeFilme">Nome do Filme</label>
+        <input type="text" placeholder="Nome do Filme" id="nomeFilme">
+    </div>
+    <div>
+        <label for="duracao">Duração</label>
+        <input type="time" id="duracao">
+    </div>
+    <div>
+        <label for="classificacao">Classificação etária</label>
+        <input type="number" placeholder="ex: 14 anos" id="classificacao">
+    </div>
+    <div>
+        <label for="genero">Gênero</label>
+        <input type="text" placeholder="ex: Ação" id="genero">
+    </div>
+    <div>
+        <label for="sinopse">Sinopse</label>
+        <input type="text" placeholder="Sinopse do filme" id="sinopse">
+    </div>
+
+    <div id="acoesBotao">
+        <button onclick="novoFilme.salvar()" id="salvar">Salvar</button>
+
+        <button onclick="novoFilme.limpar()" id="limpar">Cancelar</button>
+
+    </div>
+    <table>
+        <thead>
+            <h2 id="tituloTabela">Filmes Cadastrados</h2>
+            <th>Nome</th>
+            <th>Duração</th>
+            <th>Classificação</th>
+            <th>Genero</th>
+            <th>Sinopse</th>
+            <th></th>
+            <th></th>
+        </thead>
+        <tbody id="tabela">
+
+        </tbody>
+    </table>
+</body>
+
+</html>

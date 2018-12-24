@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="js/Salas.js"></script>
+    <link rel="stylesheet" href="css/Salas.css">
+    <title>Salas</title>
+</head>
+<body>
+    <header>Gerencia de Salas</header>
+    <div>
+        <h2>Nova Sala</h2>
+    </div>
+    <div>
+        <Label>Filme da Sala</Label>
+        <input type="search" id="filmeSala">
+    </div>
+    <div>
+        <label for="dubladolegendado">Dublado/Legendado</label>
+        <select name="selectdubladolegendado">
+            <option value="Dublado" id="dubladolegendado">Dublado</option>
+            <option value="Legendado" id="dubladolegendado" selected>Legendado</option>
+        </select>
+    </div>
+    <div>
+        <label for="tresD">3D/2D</label>
+        <select name="selecttresD">
+            <option value="3D" id="tresD">3D</option>
+            <option value="2D" id="tresD" selected>2D</option>
+        </select>
+    </div>
+    <div>
+        <label for="datasessao">Data sessão</label>
+        <input type="date" id="datasessao">
+    </div>
+    <div>
+        <label for="horario">Horario de inicio</label>
+        <input type="datetime" id="horario">
+    </div>
+    <div id="botaoacoes">
+        <button onclick="novaSala.salvar()">Salvar</button>
+        <button onclick="novaSala.limpar()">Cancelar</button>
+    </div>
+    <table>
+        <thead id="titulo">
+            <th>Filme</th>
+            <th>Dublado/Legendado</th>
+            <th>3D/2D</th>
+            <th>Data sessão</th>
+            <th>Horario de inicio</th>
+            <th></th>
+            <th></th>
+        </thead>
+        <tbody id="tabela">
+
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="clientes.css">
+    <script src="js/Cliente.js"></script>
+
+    <title>Gerência de Clientes</title>
+</head>
+
+<body>
+    <header>Gerência de Clientes</header>
+    <div>
+        <h2 class="divCenter">Novo Cliente</h2>
+    </div>
+    <div>
+        <form>
+        <label for="nomeCliente">Nome do Cliente</label>
+        <input type="text" id="nomeCliente">
+    </div>
+    <div>
+        <label for="idadeCliente">Idade do Cliente</label>
+        <input type="number" id="idadeCliente">
+    </div>
+    <div>
+        <label for="emailCliente">Email do Cliente</label>
+        <input type="email" id="emailCliente">
+    </form>
+    </div>
+    <div id="botaoacoes">
+        <button onclick="novoCliente.salvar()">Salvar</button>
+        <button onclick="novoCliente.limpar()">Cancelar</button>
+
+    </div>
+    <div >
+        <h2>Clientes Cadastrados</h2>
+
+    </div>
+    <div>
+        <table>
+            <thead >
+                <th id="tituloTabela">Nome</th>
+                <th id="tituloTabela">Idade</th>
+                <th id="tituloTabela">Email</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody id="resultadoClientes">
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+[
+    {
+        "text"     : "Extermiador do Futuro, Sala 1, 20:15",
+        "value"    : "Extermiador do Futuro",
+        "selected" : true
+    },
+    {
+        "text"     : "Star Wars,Sala 2,19:20",
+        "value"    : "Star Wars"
+    },
+    {
+        "text"     : "Aquaman, sala 3, 17:30",
+        "value"    : "Aquaman"
+    },
+    {
+        "text"     : "Bruna Surfistinha, sala 4, 23:00",
+        "value"    : "Filme Batata"
+    }
+]
